@@ -18,3 +18,7 @@ function submission() {
     var inpPesan = document.getElementById("pesan").value;
     document.getElementById("disPesan").innerHTML = inpPesan;
 }
+
+var form = document.getElementById("myForm");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
